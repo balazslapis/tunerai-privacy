@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Piano Tuner AI Android app">
+  <title>Privacy Policy - Piano Tuner AI</title>
+  <style>
+    :root {
+      --bg: #10100e;
+      --card: rgba(255, 252, 242, 0.075);
+      --card-bottom: rgba(255, 252, 242, 0.03);
+      --line: rgba(235, 190, 101, 0.22);
+      --text: #f7f2e9;
+      --muted: #c7bdab;
+      --gold: #f1c66d;
+      --red: #ef7c72;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(231, 184, 91, 0.2), transparent 34rem),
+        radial-gradient(circle at top right, rgba(196, 71, 58, 0.16), transparent 30rem),
+        var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .page { max-width: 900px; margin: 0 auto; padding: 52px 20px 80px; }
+
+    .card {
+      padding: 38px;
+      background: linear-gradient(180deg, var(--card), var(--card-bottom));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+      backdrop-filter: blur(18px);
+    }
+
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.08; letter-spacing: -0.05em; }
+    h2 { margin: 36px 0 10px; color: var(--gold); font-size: 1.18rem; }
+    h3 { margin: 22px 0 6px; color: #fff8e9; font-size: 1rem; }
+    p, li { color: #eee6d9; }
+    a { color: var(--gold); }
+    strong { color: #ffffff; }
+    ul { padding-left: 1.25rem; }
+
+    .muted { color: var(--muted); }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      padding: 8px 12px;
+      color: var(--gold);
+      background: rgba(241, 198, 109, 0.09);
+      border: 1px solid rgba(241, 198, 109, 0.26);
+      border-radius: 999px;
+      font-size: 0.92rem;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 14px 16px;
+      color: #f2ddd7;
+      background: rgba(239, 124, 114, 0.1);
+      border-left: 3px solid var(--red);
+      border-radius: 10px;
+    }
+
+    @media (max-width: 640px) {
+      .page { padding: 24px 12px 56px; }
+      .card { padding: 24px; border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <h1>Privacy Policy for Piano Tuner AI</h1>
+      <p class="muted"><strong>Effective date:</strong> 2026-07-13</p>
+      <div class="badge">Piano tuning only - local microphone analysis - optional Firebase sync</div>
+      <p class="notice">This policy explains how Piano Tuner AI handles information when you use the Android app and its optional cloud-sync and Bluetooth motor-assist features.</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>Depending on how you use the app, we may access or process:</p>
+      <ul>
+        <li><strong>Microphone audio:</strong> live piano sound samples are processed on your device to identify pitch, partials, and tuning deviation. The app does not create audio recordings and does not upload microphone audio.</li>
+        <li><strong>Account information:</strong> Firebase user ID, email address, display name, and profile-photo URL when you choose Google sign-in and those details are supplied by your Google account.</li>
+        <li><strong>Tuning documents and measurements:</strong> piano profile name, manufacturer, model, serial number, notes, selected range, temperament, tuning style, concert pitch, selected string count, inharmonicity measurements, pitch measurements, and timestamps.</li>
+        <li><strong>Bluetooth device information:</strong> nearby or bonded device name, hardware address, signal strength, and connection state when you use the optional tuner-motor connection. If enabled, the selected auto-connect device address is stored locally on your device.</li>
+        <li><strong>Technical service data:</strong> Google Firebase may process technical data needed to provide Google sign-in, Firebase Authentication, and Cloud Firestore.</li>
+      </ul>
+
+      <h2>2. How We Use Information</h2>
+      <p>We use information to provide live piano tuning, multi-string tracking, inharmonicity measurement, optional motor-assist feedback, piano profile storage, Google authentication, and optional cross-device cloud synchronization.</p>
+      <p>On Android 11 and earlier, Android may require location permission for Bluetooth discovery. We request that permission only where Android requires it for Bluetooth scanning. The app does not use Bluetooth or location permission to determine, store, or share your physical location.</p>
+
+      <h2>3. Sharing with Third Parties</h2>
+      <p>We may process information through the following providers only as needed to operate the app:</p>
+      <ul>
+        <li><strong>Google Firebase / Google Cloud:</strong> Google sign-in, Firebase Authentication, and Cloud Firestore storage for the account profile and tuning documents you choose to synchronize.</li>
+        <li><strong>Bluetooth tuner-motor hardware:</strong> selected note, cent deviation, selected string, and motor commands may be sent locally over Bluetooth to the hardware that you connect. This is not an internet upload.</li>
+      </ul>
+      <p>We do not sell personal information. The app does not include advertising, analytics, or crash-reporting SDKs, and it does not upload microphone audio.</p>
+
+      <h2>4. Local Storage and Cloud Storage</h2>
+      <p>Tuning documents and the signed-in session are stored in the app's private Android storage. When Firebase cloud sync is configured and you sign in, the app sends the account profile and tuning documents described above to Cloud Firestore. Cloud documents are organized under your Firebase user ID and the app's Firestore security rules restrict access to that user.</p>
+      <p>Firebase may process service data on Google infrastructure. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a> for Google's service information.</p>
+
+      <h2>5. Data Retention and Deletion</h2>
+      <p>Local tuning documents remain on your device until you delete them in the app, clear app storage, or uninstall the app. The local auto-connect Bluetooth address remains until you disable auto-connect or clear app storage.</p>
+      <p>Cloud-synced tuning documents remain in Cloud Firestore until you delete the corresponding profile in the app or request deletion. Signing out removes the locally stored signed-in session but does not itself delete cloud data. Firebase Authentication account information remains associated with your Google sign-in until it is deleted through a verified deletion request.</p>
+      <p>You may delete individual tuning profiles in the app. To request deletion of all cloud data associated with Piano Tuner AI, contact us through the public support page: <a href="https://github.com/balazslapis/tunerai-privacy/issues">https://github.com/balazslapis/tunerai-privacy/issues</a>. Do not post account details or other personal information in a public issue; request a private contact response instead.</p>
+
+      <h2>6. Security</h2>
+      <p>We use Android's app sandbox for local data. Firebase Authentication and Cloud Firestore use Google's authenticated service connections, and Firestore access is restricted by user-ID-based security rules. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+
+      <h2>7. Your Choices</h2>
+      <ul>
+        <li>You can decline microphone or Bluetooth permissions; features that require those permissions will not be available.</li>
+        <li>You can choose not to sign in with Google, but a Firebase-configured build requires sign-in before the tuner can be used.</li>
+        <li>You can delete individual tuning profiles and disable Bluetooth auto-connect in the app.</li>
+        <li>You can sign out of the app at any time.</li>
+      </ul>
+
+      <h2>8. Children</h2>
+      <p>Piano Tuner AI is not directed to children under 13 or the minimum age required in your country. We do not knowingly collect personal information from children.</p>
+
+      <h2>9. International Processing</h2>
+      <p>Your information may be processed in countries where Google and other service providers operate. By using the app, you understand that information may be transferred and processed outside your country of residence.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy when the app's data practices change. When we make changes, we will update the effective date and publish the latest version on this page.</p>
+
+      <h2>11. Contact</h2>
+      <p>For privacy questions or data-deletion requests, contact us through: <a href="https://github.com/balazslapis/tunerai-privacy/issues">https://github.com/balazslapis/tunerai-privacy/issues</a>.</p>
+    </article>
+  </main>
+</body>
+</html>
